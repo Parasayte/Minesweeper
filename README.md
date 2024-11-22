@@ -1,9 +1,9 @@
-[![Top Language](https://img.shields.io/github/languages/top/Parasayte/minesweeper?style=plastic&color=teal)](https://github.com/Parasayte/minesweeper)
-[![Repo Size](https://img.shields.io/github/repo-size/Parasayte/minesweeper?style=plastic&color=yellowgreen)](https://github.com/Parasayte/minesweeper)
-[![Last Commit](https://img.shields.io/github/last-commit/Parasayte/minesweeper?style=plastic&color=crimson)](https://github.com/Parasayte/minesweeper/commits)
+[![Top Language](https://img.shields.io/github/languages/top/Parasayte/Minesweeper?style=plastic&color=teal)](https://github.com/Parasayte/minesweeper)
+[![Repo Size](https://img.shields.io/github/repo-size/Parasayte/Minesweeper?style=plastic&color=yellowgreen)](https://github.com/Parasayte/minesweeper)
+[![Last Commit](https://img.shields.io/github/last-commit/Parasayte/Minesweeper?style=plastic&color=crimson)](https://github.com/Parasayte/minesweeper/commits)
 [![Community](https://img.shields.io/badge/Community-Active-gold?style=plastic)](https://github.com/Parasayte/minesweeper)
-[![Stars](https://img.shields.io/github/stars/Parasayte/minesweeper?style=plastic&color=darkblue)](https://github.com/Parasayte/minesweeper/stargazers)
-[![Forks](https://img.shields.io/github/forks/Parasayte/minesweeper?style=plastic&color=purple)](https://github.com/Parasayte/minesweeper/network/members)
+[![Stars](https://img.shields.io/github/stars/Parasayte/Minesweeper?style=plastic&color=darkblue)](https://github.com/Parasayte/minesweeper/stargazers)
+[![Forks](https://img.shields.io/github/forks/Parasayte/Minesweeper?style=plastic&color=purple)](https://github.com/Parasayte/minesweeper/network/members)
 
 # Minesweeper Game  [![AGPL License](https://img.shields.io/badge/CSharp-Project-indigo?style=plastic)](https://learn.microsoft.com/tr-tr/dotnet/csharp/)
 
