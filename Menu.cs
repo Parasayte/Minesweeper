@@ -97,5 +97,15 @@ namespace minesweeper
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MineNo = 30;
+            Gridwidth = 20;
+            Gridheight = 20;
+            g = new Game();
+            g.Show();
+            Hide();
+        }
     }
 }

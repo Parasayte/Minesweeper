@@ -65,11 +65,9 @@ namespace minesweeper
                     }
                 }
             }
-
+            timer1.Stop();
             ShowBombs(); 
             MessageBox.Show($"Congratulations!\nYou finished at : {time} second", "You Win", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        
-            
         }
         private void ButtonClick(Button b, object sender, EventArgs e, int x, int y)
         {
@@ -77,6 +75,7 @@ namespace minesweeper
             {
                 b.BackColor = Color.Crimson;
                 ShowBombs();
+                timer1.Stop();
                 MessageBox.Show("Game Over!", "BOOOM", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
              BombPlacer();   
             }
@@ -92,6 +91,7 @@ namespace minesweeper
         private void RestartButton(object sender, EventArgs e)
         {
             BombPlacer();
+            timer1.Start();
         } 
         private void ClearGrid()
         {

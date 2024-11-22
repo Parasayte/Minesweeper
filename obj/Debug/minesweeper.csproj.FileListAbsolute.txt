@@ -22,3 +22,15 @@ C:\Users\hougj\OneDrive\Desktop\minesweeper\obj\Debug\minesweeper.csproj.CoreCom
 C:\Users\hougj\OneDrive\Desktop\minesweeper\obj\Debug\mineswee.DE732777.Up2Date
 C:\Users\hougj\OneDrive\Desktop\minesweeper\obj\Debug\minesweeper.Menu.resources
 C:\Users\hougj\OneDrive\Desktop\minesweeper\obj\Debug\minesweeper.Game.resources
+C:\Users\hougj\source\repos\minesweeper\bin\Debug\minesweeper.exe.config
+C:\Users\hougj\source\repos\minesweeper\bin\Debug\minesweeper.exe
+C:\Users\hougj\source\repos\minesweeper\bin\Debug\minesweeper.pdb
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\minesweeper.csproj.AssemblyReference.cache
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\minesweeper.Game.resources
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\minesweeper.Menu.resources
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\minesweeper.Properties.Resources.resources
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\minesweeper.csproj.GenerateResource.cache
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\minesweeper.csproj.CoreCompileInputs.cache
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\mineswee.DE732777.Up2Date
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\minesweeper.exe
+C:\Users\hougj\source\repos\minesweeper\obj\Debug\minesweeper.pdb
