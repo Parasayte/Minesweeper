@@ -1,5 +1,7 @@
 using System;
+using System.Drawing;
 using System.Windows.Forms;
+using minesweeper.Properties;
 
 namespace minesweeper
 {
@@ -14,6 +16,7 @@ namespace minesweeper
         public Menu()
         {
             InitializeComponent();
+           
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -52,17 +55,17 @@ namespace minesweeper
         }
         private int TextBoxInputs(TextBox t, int limit)
         {
-            // Check if the input is null or empty
+      
             if (string.IsNullOrWhiteSpace(t.Text))
             {
                 ShowError($"{t.Name} Input cannot be empty. Please enter a number between 1 and {limit}.");
                 return 0;
             }
 
-            // Attempt to parse the input as an integer
+            
             if (int.TryParse(t.Text, out int number))
             {
-                // Validate the range based on the provided limit
+              
                 if (number > 0 && number <= limit)
                 {
                     return number;
@@ -98,6 +101,22 @@ namespace minesweeper
             g = new Game();
             g.Show();
             Hide();
+        }
+
+        private void ImageControler(Label l,Image img)
+        {
+            l.BackgroundImage= img;
+            l.BackgroundImageLayout = ImageLayout.Zoom;
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            ImageControler(label11,Resources.pngwing);
+            ImageControler(label10,Resources.pngwing);
+            ImageControler(label6,Resources.pngwing1);
+            ImageControler(label13,Resources.pngwing2);
+            ImageControler(label7,Resources._5a2411fc6003f508dd5d5b37);
+            
         }
     }
 }

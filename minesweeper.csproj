@@ -97,6 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\pngegg.png" />
+    <Content Include="Resources\pngwing.png" />
+    <Content Include="Resources\pngwing1.png" />
+    <Content Include="Resources\pngwing2.png" />
+    <Content Include="Resources\png_transparent_microsoft_minesweeper_land_mine_minesweeper_classic_fr_windows_minesweeper_video_game_snout_minesweeper_thumbnail.png" />
+    <Content Include="Resources\png_transparent_minesweeper_computer_icons_bing_maps_video_game_mines_miscellaneous_game_angle_thumbnail.png" />
+    <Content Include="Resources\_5a2411fc6003f508dd5d5b37.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

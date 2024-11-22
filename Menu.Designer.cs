@@ -227,7 +227,6 @@ namespace minesweeper
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 45);
             this.label6.TabIndex = 5;
-            this.label6.Text = "👻";
             // 
             // label7
             // 
@@ -238,27 +237,24 @@ namespace minesweeper
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 45);
             this.label7.TabIndex = 6;
-            this.label7.Text = "☠";
             // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Crimson;
-            this.label10.Location = new System.Drawing.Point(471, 9);
+            this.label10.Location = new System.Drawing.Point(482, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 65);
+            this.label10.Size = new System.Drawing.Size(94, 65);
             this.label10.TabIndex = 7;
-            this.label10.Text = "❄";
             // 
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label11.Location = new System.Drawing.Point(105, 9);
+            this.label11.Location = new System.Drawing.Point(108, 9);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(72, 65);
             this.label11.TabIndex = 8;
-            this.label11.Text = "❄";
             // 
             // label12
             // 
@@ -280,7 +276,6 @@ namespace minesweeper
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(46, 45);
             this.label13.TabIndex = 11;
-            this.label13.Text = "👾";
             // 
             // panel3
             // 
@@ -349,6 +344,7 @@ namespace minesweeper
             this.Location = new System.Drawing.Point(15, 15);
             this.Name = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

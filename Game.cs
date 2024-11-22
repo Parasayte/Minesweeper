@@ -43,7 +43,7 @@ namespace minesweeper
                 { 
                   
                     buttons[i, j].Tag = "-1";
-                    buttons[i, j].BackColor = Color.Crimson;
+                  
                  
                 }  
                 flagAmount = bomb ;
@@ -74,7 +74,7 @@ namespace minesweeper
         {
             if (b.Tag == "-1"&&b.Text != "🚩")
             {
-                b.BackColor = Color.Crimson;
+             
                 ShowBombs();
                 timer1.Stop();
                 MessageBox.Show("Game Over!", "BOOOM", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -214,14 +214,13 @@ namespace minesweeper
                 {  
                     b.Text = "🚩";
                     b.ForeColor=Color.Red;
-                  
                     flagAmount--;
                     labelflag.Text=flagAmount.ToString();
                 }
                 else if (b.Text == "🚩")
                 {
                     b.Text = "";
-                    
+                  
                     b.ForeColor=Color.Black;
                   
                     flagAmount++;
@@ -278,10 +277,10 @@ namespace minesweeper
                 for (int j = 0; j < buttons.GetLength(1); j++)
                 {
                     if (buttons[i, j].Tag == "-1")
-                    { 
-                        buttons[i, j].BackColor = Color.Crimson;
+                    {  
                         buttons[i, j].ForeColor = Color.Black;
-                        buttons[i,j].Text = "💣";
+                        buttons[i,j].BackgroundImage = Resources.pngwing;
+                        buttons[i,j].BackgroundImageLayout=ImageLayout.Zoom;
                     }
                 }
             }
@@ -293,6 +292,7 @@ namespace minesweeper
                 for (int j = 0; j < buttons.GetLength(1); j++)
                 {
                     buttons[i, j].Text = "";
+                    buttons[i, j].BackgroundImage=null;
                     buttons[i, j].BackColor = Color.FromArgb(33,33,33);
                 }
             }
