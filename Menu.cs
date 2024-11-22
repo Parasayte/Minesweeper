@@ -26,9 +26,9 @@ namespace minesweeper
         }
         private void costumgame_Click(object sender, EventArgs e)
         {
-            int mines = TextBoxInputs(MinesText);
-            int width = TextBoxInputs(WedthText);
-            int height = TextBoxInputs(HeightText);
+            int mines = TextBoxInputs(MinesText,70);
+            int width = TextBoxInputs(WedthText,70);
+            int height = TextBoxInputs(HeightText,500);
 
             
             if (mines > 0 && width > 0 && height > 0)
@@ -50,7 +50,7 @@ namespace minesweeper
                     MessageBoxIcon.Warning);
             }
         }
-        private int TextBoxInputs(TextBox t)
+        private int TextBoxInputs(TextBox t,int limit)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace minesweeper
 
                 if (int.TryParse(t.Text, out int number))
                 {
-                    if (number > 0 && number <= 70)
+                    if (number > 0 && number <= limit)
                     {
                         return number;
                     }
