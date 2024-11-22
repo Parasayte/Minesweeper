@@ -26,9 +26,9 @@ namespace minesweeper
         }
         private void costumgame_Click(object sender, EventArgs e)
         {
-            int mines = TextBoxInputs(MinesText,70);
-            int width = TextBoxInputs(WedthText,70);
-            int height = TextBoxInputs(HeightText,500);
+            int mines = TextBoxInputs(MinesText,10000);
+            int width = TextBoxInputs(WedthText,90);
+            int height = TextBoxInputs(HeightText,90);
 
             
             if (mines > 0 && width > 0 && height > 0)
@@ -50,47 +50,39 @@ namespace minesweeper
                     MessageBoxIcon.Warning);
             }
         }
-        private int TextBoxInputs(TextBox t,int limit)
+        private int TextBoxInputs(TextBox t, int limit)
         {
-            try
+            // Check if the input is null or empty
+            if (string.IsNullOrWhiteSpace(t.Text))
             {
-                if (string.IsNullOrWhiteSpace(t.Text))
-                {
-                    MessageBox.Show("Input cannot be empty. Please enter a number between 1 and 70.",
-                        "Error",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    return 0;
-                }
+                ShowError($"{t.Name} Input cannot be empty. Please enter a number between 1 and {limit}.");
+                return 0;
+            }
 
-                if (int.TryParse(t.Text, out int number))
+            // Attempt to parse the input as an integer
+            if (int.TryParse(t.Text, out int number))
+            {
+                // Validate the range based on the provided limit
+                if (number > 0 && number <= limit)
                 {
-                    if (number > 0 && number <= limit)
-                    {
-                        return number;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid input. Please enter a number between 1 and 70.",
-                            "Error",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Error);
-                    }
+                    return number;
                 }
                 else
                 {
-                    MessageBox.Show("Invalid input. Please enter a valid number.",
-                        "Error",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
+                    ShowError($"{t.Name} Enter a number between 1 and {limit}.");
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show($"Unexpected error: {ex.Message}");
+                ShowError("Enter a valid number.");
             }
 
             return 0;
+        }
+
+        private void ShowError(string message)
+        {
+            MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
+using minesweeper.Properties;
 
 namespace minesweeper
 {
@@ -88,11 +89,6 @@ namespace minesweeper
                 CheckWin();             
             }
         }
-        private void RestartButton(object sender, EventArgs e)
-        {
-            BombPlacer();
-            timer1.Start();
-        } 
         private void ClearGrid()
         {
             time = 0;
@@ -217,7 +213,6 @@ namespace minesweeper
                 if(flagAmount>0&&b.Text!="🚩"&&b.Text=="")
                 {  
                     b.Text = "🚩";
-                   
                     b.ForeColor=Color.Red;
                   
                     flagAmount--;
@@ -237,9 +232,10 @@ namespace minesweeper
         }
         private void PrintGrid()
         {
+            timer1.Start();
             int x = 0;
             int y = 0;
-            int ButtonsWed = 20;
+            int ButtonsWed =600/GridX;
            labelbombcounter.Text =bomb.ToString();
             labelflag.Text = flagAmount.ToString();
             buttons = new Button[GridX, GridY];
@@ -322,6 +318,12 @@ namespace minesweeper
             Menu m=new Menu();
             m.Show();
             Hide();
+        }
+
+        private void player_pictureBox_Click(object sender, EventArgs e)
+        {
+            BombPlacer();
+            timer1.Start();
         }
     }
 }

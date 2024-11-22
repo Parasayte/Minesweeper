@@ -196,6 +196,7 @@ namespace minesweeper
             this.MinesText.Name = "MinesText";
             this.MinesText.Size = new System.Drawing.Size(77, 13);
             this.MinesText.TabIndex = 4;
+            this.MinesText.Text = "50";
             // 
             // HeightText
             // 
@@ -205,6 +206,7 @@ namespace minesweeper
             this.HeightText.Name = "HeightText";
             this.HeightText.Size = new System.Drawing.Size(77, 13);
             this.HeightText.TabIndex = 3;
+            this.HeightText.Text = "30";
             // 
             // WedthText
             // 
@@ -214,6 +216,7 @@ namespace minesweeper
             this.WedthText.Name = "WedthText";
             this.WedthText.Size = new System.Drawing.Size(77, 13);
             this.WedthText.TabIndex = 2;
+            this.WedthText.Text = "30";
             // 
             // label6
             // 
