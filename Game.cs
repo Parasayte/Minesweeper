@@ -6,29 +6,31 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace minesweeper
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
-       static int bomb =100;
-        int GridX = 30;
-        int GridY = 30;
-        int flagAmount = bomb/3;
+       
+        int time = 0;
+        int bomb=minesweeper.Menu.MineNo;
+        int GridX=minesweeper.Menu.Gridwidth;
+        int GridY =minesweeper.Menu.Gridheight;
+        int flagAmount=minesweeper.Menu.MineNo ;
         Random random = new Random();
         Button[,] buttons = new Button[30,30]; 
-
-
-        public Form1()
+        
+        public Game()
         {
             InitializeComponent();
-          
+          timer1.Start();
 
         } 
         private void BombPlacer()
         {
-            flagAmount = bomb / 3;
+          
             labelflag.Text = flagAmount.ToString();
             ClearGrid();
             for(int k = 0; k < bomb; k++)
@@ -38,11 +40,12 @@ namespace minesweeper
 
                 if (buttons[i, j].Text != "-1")
                 { 
-                    buttons[i,j].Text = "-1";
+                  
                     buttons[i, j].Tag = "-1";
                     buttons[i, j].BackColor = Color.Crimson;
                  
-                }
+                }  
+                flagAmount = bomb ;
             }
             LoopForBombChecker();
             HideGrid();
@@ -63,35 +66,37 @@ namespace minesweeper
                 }
             }
 
-          
-            MessageBox.Show("Congratulations!", "You Win", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ShowBombs(); 
+            MessageBox.Show($"Congratulations!\nYou finished at : {time} second", "You Win", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        
+            
         }
-
         private void ButtonClick(Button b, object sender, EventArgs e, int x, int y)
         {
-            if (b.Tag == "-1")
+            if (b.Tag == "-1"&&b.Text != "🚩")
             {
                 b.BackColor = Color.Crimson;
                 ShowBombs();
                 MessageBox.Show("Game Over!", "BOOOM", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
              BombPlacer();   
             }
-            else
+            else if(b.Text!="🚩")
             {
                 EmptyButtonChecker(x, y);
                 b.Text = (string)b.Tag;  
+                b.ForeColor=Color.Black;
                 ColorPick(b);           
                 CheckWin();             
             }
         }
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void RestartButton(object sender, EventArgs e)
         {
             BombPlacer();
         } 
         private void ClearGrid()
         {
+            time = 0;
+            labelbombcounter.Text = time.ToString();
             for (int i = 0; i < buttons.GetLength(0); i++)
             {
                 for (int j = 0; j < buttons.GetLength(1); j++)
@@ -132,27 +137,26 @@ namespace minesweeper
                 b.Tag = BombCounter.ToString();
             }
         }
-
         private void EmptyButtonChecker(int x, int y)
         {
            
             if (x < 0 || x >= buttons.GetLength(0) || y < 0 || y >= buttons.GetLength(1))
                 return;
 
-            Button btn = buttons[x, y];
-
+            Button b = buttons[x, y];
+ 
            
-            if (btn.Text != "" || btn.Tag.ToString() == "-1")
+           
+            if (b.Text != "" || b.Tag.ToString() == "-1")
                 return;
 
-            
-            ColorPick(btn);
            
-            btn.Text = btn.Tag.ToString();
            
+            b.Text = b.Tag.ToString();
+         
+           ColorPick(b);
 
-
-            if (btn.Tag.ToString() != "0")
+            if (b.Tag.ToString() != "0")
                 return;
 
          
@@ -169,8 +173,6 @@ namespace minesweeper
             }
 
         }
-
-
         private void ColorPick(Button b)
         {
             string tagValue = b.Tag.ToString();
@@ -207,20 +209,27 @@ namespace minesweeper
                
             }
         }
-
-
         private void RightClick(object sender, MouseEventArgs e,Button b)
         {
            
             if (e.Button == MouseButtons.Right)
             {
-                if(flagAmount>0&&b.FlatStyle!=FlatStyle.Standard)
+                if(flagAmount>0&&b.Text!="🚩"&&b.Text=="")
                 {  
                     b.Text = "🚩";
-                    b.Tag = "🚩";
+                   
                     b.ForeColor=Color.Red;
                   
                     flagAmount--;
+                    labelflag.Text=flagAmount.ToString();
+                }
+                else if (b.Text == "🚩")
+                {
+                    b.Text = "";
+                    
+                    b.ForeColor=Color.Black;
+                  
+                    flagAmount++;
                     labelflag.Text=flagAmount.ToString();
                 }
             }
@@ -275,6 +284,8 @@ namespace minesweeper
                     if (buttons[i, j].Tag == "-1")
                     { 
                         buttons[i, j].BackColor = Color.Crimson;
+                        buttons[i, j].ForeColor = Color.Black;
+                        buttons[i,j].Text = "💣";
                     }
                 }
             }
@@ -298,6 +309,19 @@ namespace minesweeper
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+        private void timer1_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            
+          
+            labelbombcounter.Text=time.ToString();
+            time++;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Menu m=new Menu();
+            m.Show();
+            Hide();
         }
     }
 }
