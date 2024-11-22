@@ -57,10 +57,10 @@ Minesweeper is a classic single-player puzzle game implemented as a Windows Form
 [![Main Menu](https://thumbs2.imgbox.com/40/eb/vnGpKZe6_t.png)](https://imgbox.com/vnGpKZe6)
 
 
-[![Normal Mode](https://thumbs2.imgbox.com/50/3c/Gwd6yKIo_t.png)](https://imgbox.com/Gwd6yKIo)
+[![Normal Mode](https://thumbs2.imgbox.com/44/9e/vYXYj5Fl_t.png)](https://imgbox.com/vYXYj5Fl)
 
 
-[![Custom Mode](https://thumbs2.imgbox.com/79/05/xA7FV8IW_t.png)](https://imgbox.com/xA7FV8IW)
+[![Custom Mode](https://thumbs2.imgbox.com/21/20/jpdfTj75_t.png)](https://imgbox.com/jpdfTj75)
 
 
 [![Game Over](https://thumbs2.imgbox.com/97/5d/bo47vPUh_t.jpg)](https://imgbox.com/bo47vPUh)
