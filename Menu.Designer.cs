@@ -265,7 +265,7 @@ namespace minesweeper
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(177, 52);
             this.label12.TabIndex = 9;
-            this.label12.Text = "I recommend using 30 x 30 with different number of mines.";
+            this.label12.Text = "Recommend to using 30 x 30 or less with different number of mines.";
             // 
             // label13
             // 

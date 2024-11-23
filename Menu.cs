@@ -29,7 +29,7 @@ namespace minesweeper
         }
         private void costumgame_Click(object sender, EventArgs e)
         {
-            int mines = TextBoxInputs(MinesText,10000);
+            int mines = TextBoxInputs(MinesText,1000);
             int width = TextBoxInputs(WedthText,90);
             int height = TextBoxInputs(HeightText,90);
 
@@ -53,7 +53,7 @@ namespace minesweeper
                     MessageBoxIcon.Warning);
             }
         }
-        private int TextBoxInputs(TextBox t, int limit)
+        public int TextBoxInputs(TextBox t, int limit)
         {
       
             if (string.IsNullOrWhiteSpace(t.Text))
@@ -118,5 +118,7 @@ namespace minesweeper
             ImageControler(label7,Resources._5a2411fc6003f508dd5d5b37);
             
         }
+        
+     
     }
 }

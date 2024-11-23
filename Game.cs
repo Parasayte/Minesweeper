@@ -48,6 +48,7 @@ namespace minesweeper
                 }  
                 flagAmount = bomb ;
             }
+            timer1.Start();
             LoopForBombChecker();
             HideGrid();
         }  
@@ -299,8 +300,10 @@ namespace minesweeper
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            textBox1.Text = bomb.ToString();
             PrintGrid();
-           
+            button2.BackgroundImage = Resources.pngwing3;
+            button2.BackgroundImageLayout = ImageLayout.Zoom;
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -324,6 +327,14 @@ namespace minesweeper
         {
             BombPlacer();
             timer1.Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu m=new Menu();
+            m.TextBoxInputs(textBox1, 1000);
+            bomb = int.Parse(textBox1.Text);
+           
         }
     }
 }

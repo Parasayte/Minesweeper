@@ -100,6 +100,7 @@
     <Content Include="Resources\pngwing.png" />
     <Content Include="Resources\pngwing1.png" />
     <Content Include="Resources\pngwing2.png" />
+    <Content Include="Resources\pngwing3.png" />
     <Content Include="Resources\_5a2411fc6003f508dd5d5b37.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
