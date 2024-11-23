@@ -40,8 +40,8 @@ namespace minesweeper
                 int j = random.Next(0, GridY);
 
                 if (buttons[i, j].Text != "-1")
-                { 
-                  
+                {
+                 
                     buttons[i, j].Tag = "-1";
                   
                  

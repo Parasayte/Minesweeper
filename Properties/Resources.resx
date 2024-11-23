@@ -62,12 +62,7 @@
   <data name="pngegg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngegg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="png_transparent_microsoft_minesweeper_land_mine_minesweeper_classic_fr_windows_minesweeper_video_game_snout_minesweeper_thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png_transparent_microsoft_minesweeper_land_mine_minesweeper_classic_fr_windows_minesweeper_video_game_snout_minesweeper_thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png_transparent_minesweeper_computer_icons_bing_maps_video_game_mines_miscellaneous_game_angle_thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png_transparent_minesweeper_computer_icons_bing_maps_video_game_mines_miscellaneous_game_angle_thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
   <data name="pngwing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngwing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

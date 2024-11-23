@@ -72,28 +72,6 @@ namespace minesweeper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_microsoft_minesweeper_land_mine_minesweeper_classic_fr_windows_minesweeper_video_game_snout_minesweeper_thumbnail {
-            get {
-                object obj = ResourceManager.GetObject("png_transparent_microsoft_minesweeper_land_mine_minesweeper_classic_fr_windows_mi" +
-                        "nesweeper_video_game_snout_minesweeper_thumbnail", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_minesweeper_computer_icons_bing_maps_video_game_mines_miscellaneous_game_angle_thumbnail {
-            get {
-                object obj = ResourceManager.GetObject("png_transparent_minesweeper_computer_icons_bing_maps_video_game_mines_miscellaneo" +
-                        "us_game_angle_thumbnail", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap pngegg {
             get {
                 object obj = ResourceManager.GetObject("pngegg", resourceCulture);
