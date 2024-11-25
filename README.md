@@ -53,18 +53,21 @@ Minesweeper is a classic single-player puzzle game implemented as a Windows Form
 
 ## Screenshots
 
+[![Main Menu](https://i.imgur.com/jzflj3Z.png)](https://i.imgur.com/jzflj3Z.png)
 
-[![Main Menu](https://thumbs2.imgbox.com/40/eb/vnGpKZe6_t.png)](https://imgbox.com/vnGpKZe6)
+[![Normal Mode](https://i.imgur.com/Qa6u58D.png)](https://i.imgur.com/Qa6u58D.png)
 
+[![Custom Mode](https://i.imgur.com/N88JEFC.png)](https://i.imgur.com/N88JEFC.png)
 
-[![Normal Mode](https://thumbs2.imgbox.com/44/9e/vYXYj5Fl_t.png)](https://imgbox.com/vYXYj5Fl)
+[![Game Over](https://i.imgur.com/xK9Fyj1.png)](https://i.imgur.com/xK9Fyj1.png)
 
+[![Win Screen](https://i.imgur.com/adLArb1.png)](https://i.imgur.com/adLArb1.png)
 
-[![Custom Mode](https://thumbs2.imgbox.com/21/20/jpdfTj75_t.png)](https://imgbox.com/jpdfTj75)
+## GIF Preview
 
+![Game Preview](https://i.imgur.com/Spv1czj.gif)
 
-[![Game Over](https://thumbs2.imgbox.com/97/5d/bo47vPUh_t.jpg)](https://imgbox.com/bo47vPUh)
+## Youtube Video
 
+[![Watch on YouTube](https://i.imgur.com/D0NraSp.png)](https://www.youtube.com/watch?v=5me0kchBCck)
 
-[![Win Screen](https://thumbs2.imgbox.com/6f/fd/BGg2bLqX_t.jpg)](https://imgbox.com/BGg2bLqX)
-## Youtube video [https://www.youtube.com/watch?v=5me0kchBCck]
